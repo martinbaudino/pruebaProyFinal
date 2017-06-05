@@ -98,6 +98,14 @@ void limp_rit_int(uint32_t retardo)
 	Chip_RIT_ClearInt(LPC_RITIMER);
 }
 
+void esperar (uint32_t tiempo)
+{
+	uint32_t cuenta;	// Para lazo de retardo
+
+	for(cuenta=tiempo*1000000; cuenta!=0; cuenta--);
+
+}
+
 
 
 

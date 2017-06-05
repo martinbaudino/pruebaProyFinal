@@ -150,6 +150,7 @@ void SendUartFloatAscii(uint8_t uart_id, float val, uint8_t n_dec)
 		WriteUartByte(uart_id, val_int + '0');
 	}
 	WriteUartByte(uart_id, '\r');
+	WriteUartByte(uart_id, '\n');
 }
 
 /*==================[external functions definition]==========================*/

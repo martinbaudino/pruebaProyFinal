@@ -43,6 +43,7 @@ void base_tiempo_init(uint32_t tiempo_base);
  */
 void limp_rit_int(uint32_t retardo);
 
+void esperar (uint32_t tiempo);
 
 #endif
 

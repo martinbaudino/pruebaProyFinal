@@ -212,7 +212,7 @@ void led_off(uint8_t leds)
  * Devuelve:
  * void: Nada
  */
-void led_toggle(uint8_t leds)
+void led_conmuta(uint8_t leds)
 {
 	uint8_t check;
 

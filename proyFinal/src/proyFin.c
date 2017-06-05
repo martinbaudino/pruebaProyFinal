@@ -104,7 +104,7 @@ int main(void)
 		fVal=(fVal*3.3)/1023;
 
 		SendUartFloatAscii(UART2, fVal, 2);
-		WriteUartByte(UART2, '\r');
+
 
 
 		//valorADC_L=(uint8_t)(valorADC&0x00FF);

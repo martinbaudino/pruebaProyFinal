@@ -68,11 +68,11 @@
 #define mk60fx512vlq15     2
 
 /**
- * Definiciones de acceso p煤blico de la librer铆a, para pasar a funciones
+ * Definiciones de acceso p鷅lico de la librer韆, para pasar a funciones
  *
  * Campos de bits de LEDs: Cada bit encendido se corresponde con un LED
- * particular. Las funciones toman como par谩metro un entero de 8 bits
- * y act煤an sobre los que corresponda.
+ * particular. Las funciones toman como par醡etro un entero de 8 bits
+ * y act鷄n sobre los que corresponda.
  *
  * Ej: led_on( LED0_R | LED1 ); --> Encender谩 ambos LEDs
  */
@@ -91,10 +91,10 @@
 /*==================[external functions declaration]=========================*/
 
 /**
- * Funci贸n:
- * void led_on(uint8_t leds): Funci贸n de encendido de LEDs
+ * Funci髇:
+ * void led_on(uint8_t leds): Funci髇 de encendido de LEDs
  *
- * Par谩metros:
+ * Par醡etros:
  * uint8_t leds: Campo de bits para banderas con nombres de LED como en placa EduCIAA.
  *
  * Devuelve:
@@ -104,10 +104,10 @@ void led_on(uint8_t leds);
 
 
  /**
-  * Funci贸n:
-  * void led_off(uint8_t leds): Funci贸n de apagado de LEDs
+  * Funci髇:
+  * void led_off(uint8_t leds): Funci髇 de apagado de LEDs
   *
-  * Par谩metros:
+  * Par醡etros:
   * uint8_t leds: Campo de bits para banderas con nombres de LED como en placa EduCIAA.
   *
   * Devuelve:
@@ -117,25 +117,25 @@ void led_off(uint8_t leds);
 
 
 /**
- * Funci贸n:
+ * Funci髇:
  * void led_toggle(uint8_t leds): Funci贸n de conmutaci贸n de LEDs
  *
- * Par谩metros:
+ * Par醡etros:
  * uint8_t leds: Campo de bits para banderas con nombres de LED como en placa EduCIAA.
  *
  * Devuelve:
  * void: Nada
  */
-void led_toggle(uint8_t leds);
+void led_conmuta(uint8_t leds);
 
 
 /**
- * Funci贸n:
- * void leds_init(uint8_t leds): Funci贸n de configuraci贸n de LEDs.
+ * Funci髇:
+ * void leds_init(uint8_t leds): Funci贸n de configuraci髇 de LEDs.
  * Configura el Multiplexado de los pines, activa los pull-ups, como salidas
  * e inicializa los LEDs apagados.
  *
- * Par谩metros:
+ * Par醡etros:
  * uint8_t leds: Campo de bits para banderas con nombres de LED como en placa EduCIAA.
  *
  * Devuelve:
