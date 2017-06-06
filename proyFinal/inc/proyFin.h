@@ -60,6 +60,7 @@
 
 /*==================[inclusions]=============================================*/
 #include "stdint.h"
+#include "cmsis.h"
 
 /*==================[macros]=================================================*/
 #define lpc4337            1
@@ -105,6 +106,8 @@ uint8_t ciclaleds(uint8_t comando);
 
 /* Manejador de Interrupciones del Timer RIT */
 void ISR_RIT_Handler(void);
+
+void ISR_UARTx_IRQHandler(void);
 
 /* Inicializador de los temporizadores por soft*/
 void sft_tmr_init(void);

@@ -244,7 +244,7 @@ void (* const g_pfnVectors[])(void) = {
    ISR_NoHandler,      /* 0x27 0x0000009C - No Handler set for ISR SSP1 (IRQ 23) */
    ISR_NoHandler,      /* 0x28 0x000000A0 - No Handler set for ISR UART0 (IRQ 24) */
    ISR_NoHandler,      /* 0x29 0x000000A4 - No Handler set for ISR UART1 (IRQ 25) */
-   ISR_NoHandler,      /* 0x2a 0x000000A8 - No Handler set for ISR UART2 (IRQ 26) */
+   ISR_UARTx_IRQHandler,      /* 0x2a 0x000000A8 - No Handler set for ISR UART2 (IRQ 26) */
    ISR_NoHandler,      /* 0x2b 0x000000AC - No Handler set for ISR UART3 (IRQ 27) */
    ISR_NoHandler,      /* 0x2c 0x000000B0 - No Handler set for ISR I2S0 (IRQ 28) */
    ISR_NoHandler,      /* 0x2d 0x000000B4 - No Handler set for ISR I2S1 (IRQ 29) */
@@ -326,8 +326,7 @@ static void ISR_NoHandler(void) {
 
 __attribute__ ((section(".after_vectors")))
 static void SysTick_Handler(void) {
-    while (1) {
-    }
+
 }
 
 __attribute__ ((section(".after_vectors")))
